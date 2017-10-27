@@ -99,6 +99,7 @@
 		AF3F7D9C1F9A87FC0060C3AD /* TestTensorFlowMobileWithSwift */ = {
 			isa = PBXGroup;
 			children = (
+				AFEC8E711FA388B000CB7F64 /* Tensorflow */,
 				AF3F7DB61F9ABF5F0060C3AD /* data */,
 				AF3F7D9D1F9A87FC0060C3AD /* AppDelegate.swift */,
 				AF3F7D9F1F9A87FC0060C3AD /* SimpleViewController.swift */,
@@ -128,6 +129,13 @@
 				AF3F7DDF1FA1180D0060C3AD /* frozen_inception_v3.pb */,
 			);
 			path = data;
+			sourceTree = "<group>";
+		};
+		AFEC8E711FA388B000CB7F64 /* Tensorflow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tensorflow;
 			sourceTree = "<group>";
 		};
 		F9BF869E9FA21D13CE7D3632 /* Pods */ = {

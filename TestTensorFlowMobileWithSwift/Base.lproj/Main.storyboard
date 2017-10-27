@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kar-hq-3ge">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Menlo.ttc">
+            <string>Menlo-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Ua0-ek-iKL">
+            <objects>
+                <viewController id="Kar-hq-3ge" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PfI-b4-3jX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7I-tf-2g2">
+                                <rect key="frame" x="148" y="215" width="79" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Simple"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="VcZ-6v-FXP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDB-Z0-uE9">
+                                <rect key="frame" x="148" y="356" width="79" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <segue destination="Oz5-FX-OQX" kind="show" id="zXc-ab-i56"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="lER-GU-5K7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KSx-Mb-jPA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-650" y="314"/>
+        </scene>
+        <!--Simple View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SimpleViewController" customModule="TestTensorFlowMobileWithSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uF-By-WHW">
+                                <rect key="frame" x="137" y="20" width="102" height="285.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Run Model"/>
+                                <connections>
+                                    <action selector="runModel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1DB-yJ-dfF"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" contentMode="scaleToFill" editable="NO" text="The results of running the model will appear here." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qC7-bA-kLO">
+                                <rect key="frame" x="20" y="313.5" width="335" height="333.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlN-M7-WYC">
+                                <rect key="frame" x="335" y="30" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ito-tX-uJf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="✕"/>
+                                <connections>
+                                    <action selector="dismiss:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dhk-3I-snh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78453022241592407" green="0.79952043294906616" blue="0.561573326587677" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qC7-bA-kLO" secondAttribute="trailing" constant="20" id="3rq-VC-7hS"/>
+                            <constraint firstItem="qC7-bA-kLO" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="O8b-Vf-qE5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dlN-M7-WYC" secondAttribute="trailing" constant="10" id="QRS-5T-cTS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qC7-bA-kLO" secondAttribute="bottom" constant="20" id="Qhd-dE-Rn3"/>
+                            <constraint firstItem="dlN-M7-WYC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Vju-tH-HCB"/>
+                            <constraint firstItem="3uF-By-WHW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pDp-Jb-lOX"/>
+                            <constraint firstItem="3uF-By-WHW" firstAttribute="centerX" secondItem="qC7-bA-kLO" secondAttribute="centerX" id="plk-fM-Wba"/>
+                            <constraint firstItem="qC7-bA-kLO" firstAttribute="top" secondItem="3uF-By-WHW" secondAttribute="bottom" constant="8" symbolic="YES" id="sp2-tS-7rk"/>
+                            <constraint firstItem="qC7-bA-kLO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="v2d-A1-u9y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="resultTextView" destination="qC7-bA-kLO" id="POb-FA-nNg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="398" y="-6"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="SFj-AT-uLf">
+            <objects>
+                <viewController id="Oz5-FX-OQX" customClass="CameraViewController" customModule="TestTensorFlowMobileWithSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BYt-fL-dTI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oEV-uf-mGM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNN-Xh-kOC">
+                                <rect key="frame" x="335" y="30" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Cnx-kH-Twe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="✕"/>
+                                <connections>
+                                    <action selector="dismiss:" destination="Oz5-FX-OQX" eventType="touchUpInside" id="O9s-y6-f6c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTV-QV-nCW">
+                                <rect key="frame" x="115" y="587" width="145" height="36"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
+                                <state key="normal" title="Freeze Frame"/>
+                                <connections>
+                                    <action selector="takePicture:" destination="Oz5-FX-OQX" eventType="touchUpInside" id="Nli-fO-8tY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YTV-QV-nCW" firstAttribute="centerX" secondItem="BYt-fL-dTI" secondAttribute="centerX" id="8ff-zQ-lMx"/>
+                            <constraint firstItem="oEV-uf-mGM" firstAttribute="leading" secondItem="BYt-fL-dTI" secondAttribute="leading" id="FP2-ta-WUw"/>
+                            <constraint firstAttribute="trailing" secondItem="oEV-uf-mGM" secondAttribute="trailing" id="Tyu-Yr-fva"/>
+                            <constraint firstItem="oEV-uf-mGM" firstAttribute="bottom" secondItem="BYt-fL-dTI" secondAttribute="bottom" id="agi-8U-RCl"/>
+                            <constraint firstItem="z6J-Rk-gHu" firstAttribute="trailing" secondItem="ZNN-Xh-kOC" secondAttribute="trailing" constant="10" id="c8s-ZK-l4g"/>
+                            <constraint firstItem="oEV-uf-mGM" firstAttribute="top" secondItem="BYt-fL-dTI" secondAttribute="top" id="fNC-yk-Xcn"/>
+                            <constraint firstItem="z6J-Rk-gHu" firstAttribute="bottom" secondItem="YTV-QV-nCW" secondAttribute="bottom" constant="44" id="mqn-lg-0Tg"/>
+                            <constraint firstItem="ZNN-Xh-kOC" firstAttribute="top" secondItem="z6J-Rk-gHu" secondAttribute="top" constant="10" id="wFc-mS-4jo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="z6J-Rk-gHu"/>
+                    </view>
+                    <connections>
+                        <outlet property="previewView" destination="oEV-uf-mGM" id="Ew3-WQ-a1D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ug-bN-B7r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="397.60000000000002" y="676.91154422788611"/>
+        </scene>
+    </scenes>
+</document>

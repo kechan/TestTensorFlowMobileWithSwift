@@ -6,7 +6,7 @@ This is based on:
 
    https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/ios
    
-provided as example on how to run Inception model on iOS to do Image recognition. The original projects use Objective-C(++). Here, I have combined the /simple and /camara into a single test project. Since Tensorflow API is written in C++, an Objective-C wrapper is created and referenced by a bridging header. I have also translated objective-C into Swift (mostly in the viewcontrollers) and make minor modification to the UI to use Storyboard and Autolayouts. This project may be useful to quickily conveniently sanity test CNN on how well it performs on recent iOS version and devices.
+provided as example on how to run Inception model on iOS to do Image recognition. Here, I have combined the /simple and /camara into a single test project. Since Tensorflow API is written in C++, an Objective-C wrapper is created and referenced by a bridging header. I have also translated objective-C into Swift (mostly in the viewcontrollers) and make minor modification to the UI to use Storyboard and Autolayouts. This project may be useful to quickily conveniently sanity test CNN on how well it performs on recent iOS version and devices.
 
 Tested on Xcode 9.0 
 

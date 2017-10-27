@@ -8,6 +8,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -24,32 +25,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7I-tf-2g2">
-                                <rect key="frame" x="155" y="318.5" width="66" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="SVq-Xa-vMX"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Simple"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="VcZ-6v-FXP"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDB-Z0-uE9">
-                                <rect key="frame" x="150" y="356.5" width="75" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Camera"/>
-                                <connections>
-                                    <segue destination="Oz5-FX-OQX" kind="show" id="zXc-ab-i56"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="n4g-64-Mj9">
+                                <rect key="frame" x="140" y="283" width="95" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7I-tf-2g2">
+                                        <rect key="frame" x="0.0" y="0.0" width="95" height="46"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Simple"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="VcZ-6v-FXP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDB-Z0-uE9">
+                                        <rect key="frame" x="0.0" y="54" width="95" height="46"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Camera"/>
+                                        <connections>
+                                            <segue destination="Oz5-FX-OQX" kind="show" id="zXc-ab-i56"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fDB-Z0-uE9" firstAttribute="centerX" secondItem="PfI-b4-3jX" secondAttribute="centerX" id="XNL-b6-BYM"/>
-                            <constraint firstItem="O7I-tf-2g2" firstAttribute="centerX" secondItem="PfI-b4-3jX" secondAttribute="centerX" id="kWq-BF-I6p"/>
-                            <constraint firstItem="fDB-Z0-uE9" firstAttribute="top" secondItem="O7I-tf-2g2" secondAttribute="bottom" constant="8" symbolic="YES" id="pKb-Yj-Fdi"/>
-                            <constraint firstItem="O7I-tf-2g2" firstAttribute="centerY" secondItem="PfI-b4-3jX" secondAttribute="centerY" id="wbw-Bp-ced"/>
+                            <constraint firstItem="n4g-64-Mj9" firstAttribute="centerX" secondItem="PfI-b4-3jX" secondAttribute="centerX" id="GEt-6I-fLk"/>
+                            <constraint firstItem="n4g-64-Mj9" firstAttribute="centerY" secondItem="PfI-b4-3jX" secondAttribute="centerY" id="eMS-Vh-1lI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lER-GU-5K7"/>
                     </view>

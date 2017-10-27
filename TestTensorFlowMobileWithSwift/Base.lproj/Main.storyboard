@@ -24,18 +24,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7I-tf-2g2">
-                                <rect key="frame" x="148" y="215" width="79" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7I-tf-2g2">
+                                <rect key="frame" x="155" y="318.5" width="66" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="SVq-Xa-vMX"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Simple"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="VcZ-6v-FXP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDB-Z0-uE9">
-                                <rect key="frame" x="148" y="356" width="79" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDB-Z0-uE9">
+                                <rect key="frame" x="150" y="356.5" width="75" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Camera"/>
                                 <connections>
@@ -44,6 +45,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fDB-Z0-uE9" firstAttribute="centerX" secondItem="PfI-b4-3jX" secondAttribute="centerX" id="XNL-b6-BYM"/>
+                            <constraint firstItem="O7I-tf-2g2" firstAttribute="centerX" secondItem="PfI-b4-3jX" secondAttribute="centerX" id="kWq-BF-I6p"/>
+                            <constraint firstItem="fDB-Z0-uE9" firstAttribute="top" secondItem="O7I-tf-2g2" secondAttribute="bottom" constant="8" symbolic="YES" id="pKb-Yj-Fdi"/>
+                            <constraint firstItem="O7I-tf-2g2" firstAttribute="centerY" secondItem="PfI-b4-3jX" secondAttribute="centerY" id="wbw-Bp-ced"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lER-GU-5K7"/>
                     </view>
                 </viewController>

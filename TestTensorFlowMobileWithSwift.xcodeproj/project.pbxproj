@@ -104,12 +104,6 @@
 				AF3F7D9D1F9A87FC0060C3AD /* AppDelegate.swift */,
 				AF3F7D9F1F9A87FC0060C3AD /* SimpleViewController.swift */,
 				AF3F7DBE1F9B071D0060C3AD /* CameraViewController.swift */,
-				AF3F7DB21F9A8B5D0060C3AD /* ios_image_load.h */,
-				AF3F7DB01F9A8B1C0060C3AD /* ios_image_load.mm */,
-				AF3F7DDC1FA059030060C3AD /* tensorflow_utils.h */,
-				AF3F7DDD1FA0598B0060C3AD /* tensorflow_utils.mm */,
-				AF3F7DB31F9A8F0D0060C3AD /* TensorflowWrapper.h */,
-				AF3F7DB41F9A8F0D0060C3AD /* TensorflowWrapper.mm */,
 				AF3F7DA11F9A87FC0060C3AD /* Main.storyboard */,
 				AF3F7DA41F9A87FC0060C3AD /* Assets.xcassets */,
 				AF3F7DA61F9A87FC0060C3AD /* LaunchScreen.storyboard */,
@@ -134,6 +128,12 @@
 		AFEC8E711FA388B000CB7F64 /* Tensorflow */ = {
 			isa = PBXGroup;
 			children = (
+				AF3F7DB21F9A8B5D0060C3AD /* ios_image_load.h */,
+				AF3F7DB01F9A8B1C0060C3AD /* ios_image_load.mm */,
+				AF3F7DDC1FA059030060C3AD /* tensorflow_utils.h */,
+				AF3F7DDD1FA0598B0060C3AD /* tensorflow_utils.mm */,
+				AF3F7DB31F9A8F0D0060C3AD /* TensorflowWrapper.h */,
+				AF3F7DB41F9A8F0D0060C3AD /* TensorflowWrapper.mm */,
 			);
 			path = Tensorflow;
 			sourceTree = "<group>";
